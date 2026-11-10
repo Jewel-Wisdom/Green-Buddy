@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenBuddy – Plant Care Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.12.2/dist/ml5.min.js"></script>
+</head>
+<body>
+
+    <h1>GreenBuddy – Plant Care Tracker</h1>
+
+    <div class="camera-box">
+        <h2>Leaf Health Check</h2>
+        <div id="my_camera"></div>
+        <button onclick="captureLeafPhoto()">Capture Leaf Photo</button>
+        <div id="snapshot"></div>
+        <p id="healthPrediction">Health prediction will appear here.</p>
+    </div>
+
+    <div class="form-box">
+        <h2>Add New Plant</h2>
+        <input id="plantName" placeholder="Plant Name (e.g. Money Plant)">
+        <input id="waterFrequency" placeholder="Watering frequency (e.g. Every 3 days)">
+        <input id="plantNotes" placeholder="Notes (e.g. Keep near window)">
+        <button onclick="addPlant()">Add Plant</button>
+    </div>
+
+    <div class="sync-box">
+        <button onclick="syncWithFirebase()">Sync with Firebase</button>
+        <p id="status">Status: Ready</p>
+    </div>
+
+    <div class="list-box">
+        <h2>My Plants</h2>
+        <ul id="plantList"></ul>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>

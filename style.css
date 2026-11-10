@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #e8eee9;
+    margin: 20px auto;
+    max-width: 650px;
+    padding: 15px;
+}
+
+h1 {
+    text-align: center;
+    color: #1b5e20;
+}
+
+h2 {
+    color: #388e3c;
+}
+
+.camera-box,
+.form-box,
+.sync-box,
+.list-box {
+    background: white;
+    padding: 20px;
+    border: 1px solid #cdd8cd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#my_camera {
+    width: 320px;
+    height: 240px;
+    border: 1px solid #999;
+    margin: auto;
+}
+
+#snapshot {
+    margin-top: 15px;
+    text-align: center;
+}
+
+#snapshot img {
+    max-width: 100%;
+    border: 1px solid #ccc;
+}
+
+.form-box input {
+    display: block;
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.form-box button {
+    background: #4caf50;
+}
+
+.form-box button:hover {
+    background: #388e3c;
+}
+
+.camera-box button {
+    background: #26a69a;
+    margin-top: 10px;
+}
+
+.camera-box button:hover {
+    background: #00897b;
+}
+
+.sync-box button {
+    background: #00897b;
+}
+
+.sync-box button:hover {
+    background: #00695c;
+}
+
+#status {
+    margin-top: 10px;
+    color: #666;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #e8f5e9;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #c8e6c9;
+    border-radius: 7px;
+}
+
+.watered {
+    background: #a5d6a7;
+}
+
+.plant-name {
+    font-weight: bold;
+    color: #1b5e20;
+}
+
+.plant-details {
+    font-size: 13px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+.buttons button:first-child {
+    background: #4caf50;
+}
+
+.buttons button:last-child {
+    background: #e57373;
+}
